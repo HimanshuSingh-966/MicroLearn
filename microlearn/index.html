@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MicroLearn Optics — Classroom Microscope Viewer</title>
+    <meta name="description" content="Interactive classroom microscope viewer and specimen inspection station with live optical stage, organelle identification, and student lab notebook." />
+    <meta property="og:title" content="MicroLearn Optics — Classroom Microscope Viewer" />
+    <meta property="og:description" content="Interactive classroom microscope viewer and specimen inspection station with live optical stage, organelle identification, and student lab notebook." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+    <script>
+      // Ignore Vite HMR WebSocket connection errors in sandbox/iframe preview environment
+      window.addEventListener('unhandledrejection', function(event) {
+        if (
+          event.reason &&
+          (typeof event.reason.message === 'string' && event.reason.message.includes('WebSocket')) ||
+          (typeof event.reason.stack === 'string' && (
+            event.reason.stack.includes('@vite/client') ||
+            event.reason.stack.includes('createWebSocketModuleRunnerTransport')
+          ))
+        ) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        if (
+          (typeof event.message === 'string' && event.message.includes('WebSocket')) ||
+          (typeof event.filename === 'string' && event.filename.includes('@vite/client'))
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-background text-on-surface antialiased select-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "MicroLearn Optics",
+  "description": "Interactive classroom microscope viewer and specimen inspection station with live optical stage, organelle identification, and student lab notebook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

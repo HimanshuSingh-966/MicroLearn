@@ -1,0 +1,19 @@
+[Unit]
+Description=MicroLearn Raspberry Pi microscope camera peer
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_PI_USERNAME
+SupplementaryGroups=video
+WorkingDirectory=/opt/microlearn-pi
+EnvironmentFile=/etc/microlearn-pi.env
+ExecStart=/opt/microlearn-pi/.venv/bin/python /opt/microlearn-pi/camera_agent.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

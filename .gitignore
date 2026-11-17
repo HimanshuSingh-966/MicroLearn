@@ -1,0 +1,22 @@
+# Python / Colab training outputs
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+artifacts/
+*.pt
+*.pth
+
+# Secrets and local deployment state
+.env
+.env.*
+!.env.example
+backend/.env
+pi/.env
+microlearn/deployment/oci.env
+microlearn/data/
+
+# Editors and OS files
+.DS_Store
+Thumbs.db
+.vscode/
